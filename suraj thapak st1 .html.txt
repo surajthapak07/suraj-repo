@@ -1,0 +1,19 @@
+<!doctype .html >
+<html lang="en" >
+<head>	
+< meta-utf8="device width ", width =1500; height 200 >
+<title> college admissionform </title>
+<body>
+<h1> name of the student </h1>
+<h2> admission number </h2>
+<h3> course </h3>
+<h4> section </h4>
+<h5> email id </h5>
+<hr>
+<form>
+<label for="name" > fullname="name"> <br><br>
+<label for="email": </label>
+</form>
+</hr>
+</body>
+</html>
