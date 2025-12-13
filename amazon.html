@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Amazon Mock Front Page</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Local stylesheet (ensure amazon.css is present) -->
+    <link rel="stylesheet" href="amazon.css" />
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-logo border">
+                <div class="logo"></div>
+            </div>
+
+            <div class="nav-address border">
+                <p class="deliver">Deliver to</p>
+                <div class="add-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="India">India</p>
+                </div>
+            </div>
+
+            <div class="nav-search">
+                <select class="search-select">
+                    <option>All</option>
+                </select>
+                <input placeholder="Search Amazon" class="search-input" />
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+
+            <div class="nav-singin border">
+                <p><span>Hello, sign in</span></p>
+                <p class="nav-second">Account & Lists</p>
+            </div>
+
+            <div class="nav-singin border">
+                <p><span>Returns</span></p>
+                <p class="nav-second">& orders</p>
+            </div>
+
+            <div class="nav-cart border">
+                <i class="fa-solid fa-cart-shopping cart"></i>
+                <span id="cartCounter">0</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero / Banner -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Shop the Latest Deals — Mobiles, Laptops & More</h1>
+                <p>Fast Delivery • Great Prices • Trusted Brands</p>
+                <a class="cta-btn" href="#products">Shop Now</a>
+            </div>
+        </section>
+
+        <!-- Categories -->
+        <section class="categories">
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=600&q=80" alt="Mobile phones">
+                <h3>Mobiles</h3>
+            </div>
+
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=600&q=80" alt="Laptops">
+                <h3>Laptops</h3>
+            </div>
+
+            <div class="category-card">
+                <img src=https://cdn.pixabay.com/photo/2013/07/13/12/19/printer-159612_1280.png alt="Printers">
+                <h3>Printers</h3>
+            </div>
+
+            <div class="category-card">
+                <img src=https://tse3.mm.bing.net/th/id/OIP.UZpvARxLlIDmtO9ZXe-TCQHaHa?pid=Api&P=0&h=180" alt="Office Supplies">
+                <h3>Office Supplies</h3>
+            </div>
+        </section>
+
+        <!-- Product Grid -->
+        <section id="products" class="product-grid">
+
+            <!-- Product Card - Mobile -->
+            <article class="product-card">
+                <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=900&q=80" alt="Mobile X">
+                <div class="product-info">
+                    <h4>Mobile X 5G - 128GB</h4>
+                    <p class="price">₹14,999</p>
+                    <p class="rating">★★★★☆ (4.3)</p>
+                    <button class="btn add-to-cart" data-name="Mobile X">Add to Cart</button>
+                </div>
+            </article>
+
+            <!-- Product Card - Laptop (Asus ExpertBook P1) -->
+            <article class="product-card">
+                <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=900&q=80" alt="Asus ExpertBook P1 - laptop">
+                <div class="product-info">
+                    <h4>Asus ExpertBook P1 – i5, 8GB RAM</h4>
+                    <p class="price">₹48,990</p>
+                    <p class="rating">★★★★★ (4.6)</p>
+                    <button class="btn add-to-cart" data-name="Asus ExpertBook P1">Add to Cart</button>
+                </div>
+            </article>
+
+            
+            <!-- Product Card - Gym Equipment -->
+<article class="product-card">
+    <img src=https://tse3.mm.bing.net/th/id/OIP.eIpmuGatjyr7KqMcWauaaQHaHa?pid=Api&P=0&h=180" alt="Dumbbell set">
+    <div class="product-info">
+        <h4>Rubber Dumbbell Set</h4>
+        <p class="price">₹3,499</p>
+        <p class="rating">★★★★☆ (4.2)</p>
+        <button class="btn add-to-cart" data-name="Dumbbell Set">Add to Cart</button>
+    </div>
+</article>
+
+<!-- Product Card - Printer Cartridge -->
+<article class="product-card">
+    <img src=https://cdn.pixabay.com/photo/2013/07/13/12/19/printer-159612_1280.png alt="Printer cartridge">
+    <div class="product-info">
+        <h4>Printer Cartridge Pack</h4>
+        <p class="price">₹899</p>
+        <p class="rating">★★★★☆ (4.1)</p>
+        <button class="btn add-to-cart" data-name="Cartridge Pack">Add to Cart</button>
+    </div>
+</article>
+
+<!-- Product Card - A4 Paper Ream -->
+<article class="product-card">
+    <img src=https://tse3.mm.bing.net/th/id/OIP.UZpvARxLlIDmtO9ZXe-TCQHaHa?pid=Api&P=0&h=180" alt="A4 Paper Ream">
+    <div class="product-info">
+        <h4>A4 Paper Ream - 500 Sheets</h4>
+        <p class="price">₹599</p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Amazon Mockup · For demo purposes only</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple Add to Cart behavior (client-only)
+        const cartButtons = document.querySelectorAll('.add-to-cart');
+        let cartCount = 0;
+
+        cartButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                cartCount += 1;
+                btn.textContent = 'Added';
+                btn.disabled = true;
+                document.getElementById('cartCounter').textContent = cartCount;
+            });
+        });
+    </script>
+</body>
+</html>
