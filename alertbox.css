@@ -1,0 +1,8 @@
+.alert {
+    width: 60%;
+    margin: 50px auto;
+    padding: 15px;
+    background-color: #ffdddd;
+    border-left: 5px solid red;
+    font-family: Arial;
+}
