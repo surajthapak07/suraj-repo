@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid model 1</title>
+    <style>
+        body{
+            margin: 0;
+            padding:0;
+            font-size: larger;
+            font-weight: 500;
+        }
+        html,*{
+            margin: 10px;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        main{
+            display: grid;
+           grid-template-row:repeat(4,1fr);
+           gap: 10px;
+           background-color: rgb(226, 221, 221);
+        }
+        #header{
+            background-color: grey;
+            height: 100px;
+            text-align: center;
+        }
+        #box{
+            background-color: rgb(235, 184, 46);
+            height: 200px;
+           
+            border: solid 4px black;
+            padding: 0px;
+        }
+        .section{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 10px;
+           
+        }
+        #Footer{
+            background-color: grey;
+            height: 100px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="header"><h2>Header</h2></div>
+        <div class="section">
+            <div id="box">1</div>
+            <div id="box">2</div>
+            <div id="box">3</div>
+            <div id="box">4</div>
+            <div id="box">5</div>
+            <div id="box">6</div>
+            <div id="box">7</div>
+            <div id="box">8</div>
+            <div id="box">9</div>
+            <div id="box">10</div>
+            <div id="box">11</div>
+            <div id="box">12</div>
+        </div>
+        <div id="Footer"><h2>Footer</h2></div>
+    </main>
+</body>
+</html>
